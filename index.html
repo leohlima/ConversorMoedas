@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+    <title>Convert Money</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="title">
+            MS1 - Conversor de Moedas
+        </h1>
+    </div>
+    <div class="caixaPrincipal">
+        <p class="paragrafo">
+            Converter <b>de</b>
+        </p>
+
+        <select class="select">
+            <option>
+                R$ <b>Real Brasileiro</b>
+            </option>
+        </select>
+
+        <p class="paragrafo">
+            Converter <b>para</b>
+        </p>
+
+        <select class="select" id="selectMoeda">
+            <option>
+                U$$ Dólar Americano
+            </option>
+            <option>
+                € Euro
+            </option>
+        </select>
+
+        <p class="paragrafo">
+            <b>Valor</b>
+        </p>
+
+        <input id="input" type="number" placeholder="R$ 10.000,00">
+
+        <button id="button">Converter</button>
+
+        <div id="caixa-container">
+            <div class="caixa-menor">
+                <img src="./Imagens/Real.png">
+
+                <p class="paragrafo">
+                    Real
+                </p>
+
+                <p class id="resultado-real">
+                    <b>R$ 10.000,00</b>
+                </p>
+            </div>
+
+            <div id="seta">
+                <img src="./Imagens/Seta.png">
+            </div>
+
+            <div class="caixa-menor">
+                <img id="bandeira-moedas" src="./Imagens/Dolar.png">
+
+                <p class="paragrafo" id = "texto-moeda">
+                    Dolar Americano
+                </p>
+                <p class id = resultado-dolar>
+                    <b>US$ 2.000,00</b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #2c2c2c;
+    }
+
+    #header {
+        background: #9657A5;
+        width: 375px;
+        height: 66px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    #title {
+        color: #f4f4f4;
+        font-size: 24px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .caixaPrincipal {
+        background: #E5E5E5;
+        width: 375px;
+        padding: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .paragrafo {
+        margin-bottom: 6px;
+        color: #777777;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .select {
+        background-color: #FFFFFF;
+        Width: 327px;
+        Height: 48px;
+        border-radius: 4px;
+        border: 1px solid #BBBBBB;
+        margin-bottom: 23px;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+        padding-left: 16px;
+        font-size: 16px;
+        font: bold;
+    }
+
+    #input {
+        background-color: #FFFFFF;
+        Width: 327px;
+        Height: 48px;
+        border-radius: 4px;
+        border: 1px solid #BBBBBB;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+        margin-bottom: 24px;
+        padding-left: 16px;
+        font-size: 16px;
+    }
+
+    #button {
+
+        width: 327px;
+        height: 48px;
+        background: #CDD728;
+        border-radius: 25px;
+        font-size: 18px;
+        line-height: 18px;
+        color: #F4F4F4;
+        border: none;
+        display: block;
+        cursor: pointer;
+        margin-bottom: 36px;
+    }
+
+    #button:active {
+        opacity: 0.6;
+    }
+
+    #caixa-container {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid #9657A5;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .caixa-menor {
+        text-align: center;
+    }
+
+    #seta {
+        text-align: center;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #dinheiro {
+        font-size: 20px;
+        line-height: 18px;
+    }
+    
+    
+</style>
+<script src="./scripts.js">
+</script>
+
+</html>
